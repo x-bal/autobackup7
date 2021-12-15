@@ -26,6 +26,7 @@ class Kernel extends ConsoleKernel
     {
         $schedule->command('backup:clean')->everyMinute();
         $schedule->command('backup:run')->everyMinute();
+        $schedule->command('cron:test')->everyMinute();
     }
 
     /**
